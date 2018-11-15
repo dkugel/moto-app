@@ -1,0 +1,83 @@
+/*Iconos Framework7*/
+@font-face {
+    font-family: 'Framework7 Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Framework7Icons-Regular.eot");
+    src: local('Framework7 Icons'),
+       local('Framework7Icons-Regular'),
+       url("../fonts/Framework7Icons-Regular.woff2") format("woff2"),
+       url("../fonts/Framework7Icons-Regular.woff") format("woff"),
+       url("../fonts/Framework7Icons-Regular.ttf") format("truetype");
+  }
+  
+.f7-icons, .framework7-icons {
+    font-family: 'Framework7 Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+}
+.navbar {
+    background-color: #8CC63F !important;
+    color: #fff !important;
+    height: 78px !important;
+}
+.ios .navbar ~ .page-content, .ios .navbar ~ :not(.no-navbar) .page-content {
+    padding-top: 100px;
+}
+.md .navbar + .toolbar:not(.toolbar-bottom-md):not(.messagebar) {
+    top: 74px;
+}
+.md .navbar + .toolbar:not(.toolbar-bottom-md):not(.messagebar) ~ * .page-content, .md .navbar + .toolbar:not(.toolbar-bottom-md):not(.messagebar) ~ .page-content {
+    padding-top: 140px;
+}
+.md .toolbar {
+    background: #8CC63F;
+}
+.ios .toolbar {
+    background: #8CC63F;
+}
+.md .navbar .title {
+    margin-left: 145px;
+}
+.md .toggle input[type="checkbox"]:checked + .toggle-icon {background: #8CC63F;}
+.md .toggle input[type="checkbox"]:checked + .toggle-icon::after {background: #8CC63F;}
+.page-content{
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+.ios .toolbar a.link {
+      color: #fff;
+  }
+
+.select-vehicle{
+    text-align: center;
+}
+.select-vehicle img{
+    max-width: 150px;
+    border: 1px solid #8CC63F;
+    padding: 8px;
+    box-shadow: 5px 5px 6px 2px grey;
+    border-radius: 5px;
+}
+
+.intro{
+    text-align: justify;
+}
+.intro img{
+    max-width: 80px;
+}

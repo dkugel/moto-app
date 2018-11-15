@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>AutoMo Control</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="node_modules/framework7/css/framework7.min.css">    
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="node_modules/framework7/css/framework7-icons.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+                <div class="title"><img src="images/mantenimiento.png" /></div>
+            </div>
+          </div>
+
+          <!-- Toolbar -->
+          <div class="toolbar">
+            <div class="toolbar-inner">
+              <!-- Toolbar links -->
+              <a href="/" class="link"><i class="f7-icons">home</i></a>
+              <a href="/add/" class="link"><i class="f7-icons">add_round</i></a>
+              <a href="/about/" class="link"><i class="f7-icons">settings</i></a>
+              <a href="/profile/" class="link"><i class="f7-icons">person</i></a>
+            </div>
+          </div>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            Tus datos y datos de contacto en caso de emergencia
+            <form class="list form-store-data" id="my-form">
+                <ul>
+                    <li>
+                        <div class="item-content item-input">
+                            <div class="item-inner">
+                            <div class="item-title item-label">Nombres y Apellidos</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="nombre" placeholder="Usuario AutoMo">
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content item-input">
+                            <div class="item-inner">
+                            <div class="item-title item-label">Persona de contacto</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="nombre" placeholder="Contactar A:">
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li>
+                        <div class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Persona de contacto</div>
+                                <div class="item-input-wrap">                                
+                                    <div class="row">      
+                                        <div class="col-40">
+                                            <a class="item-link smart-select smart-select-init" data-open-in="popover">
+                                                <select name="indicativo" >
+                                                    <option value="57" selected>+57</option>
+                                                    <option value="52">+52</option>
+                                                    <option value="1">+1</option>                                                
+                                                </select>
+                                                <div class="item-content">
+                                                    <div class="item-inner">
+                                                    <div class="item-title"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>                                             
+                                        <div class="col-60">
+                                            <input type="text" name="telcont" placeholder="Teléfono de contacto">
+                                        </div>                     
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>                        
+                    </li>                                                                                
+                </ul>
+            </form>
+            <div class="block block-strong row">
+                <div class="col"><a class="button convert-form-to-data" href="#">Guardar</a></div>
+                <div class="col"><a class="button fill-form-from-data" href="#">Fill Form</a></div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="node_modules/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
