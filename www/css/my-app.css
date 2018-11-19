@@ -52,7 +52,7 @@
     background: #8CC63F;
 }
 .md .navbar .title {
-    margin-left: 145px;
+    margin-left: 40%;
 }
 .md .toggle input[type="checkbox"]:checked + .toggle-icon {background: #8CC63F;}
 .md .toggle input[type="checkbox"]:checked + .toggle-icon::after {background: #8CC63F;}
